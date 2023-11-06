@@ -1,13 +1,13 @@
 /* Height set to allow h-100 classes to work */
 html {
     height: 100%;
+    background-color: #f3e5ab8f;
 }
 
 body {
     background: url('/media/homepage_background.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #525252;
     font-family: 'basic';
 }
 
@@ -20,6 +20,27 @@ body {
     width: fit-content;
 }
 
+#topnav {
+    background-color: #525252;
+    color: #F3E5AB;
+}
+
+.dropdown-menu {
+    background-color: #525252;
+}
+
+.dropdown-item {
+    color: #F3E5AB;
+}
+
+.dropdown-item:hover {
+    color: #FF7518;
+}
+
+.bg-banner {
+    background-color: #525252;
+}
+
 .home-message {
     color: #9EB9D4;
     font-family: 'mako';
@@ -27,8 +48,8 @@ body {
 
 .browse-button {
     font-family: 'mako';
-    background: #FF7518;
-    color: #273BE2;
+    background: #525252;
+    color: #FF7518;
     min-width: 260px;
 }
 
@@ -38,12 +59,22 @@ body {
 .btn-grey:hover,
 .btn-grey:active,
 .btn-grey:focus {
-    background: #525252;
-    color: #FF7518;
+    background: #FF7518;
+    color: #525252;
 }
 
 .text-grey {
     color: #525252 !important;
+}
+
+.text-yellow {
+    color: #F3E5AB !important;
+}
+
+.text-orange {
+    font-family: 'mako';
+    font-weight: bold;
+    color:#FF7518 !important;
 }
 
 .border-grey {
