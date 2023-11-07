@@ -1,0 +1,28 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp01",
+            "name": "Kingsley Vale",
+            "description": "Oil painting on stretched canvas - 83 x 74 cm - Framed in neutral grey moulding. The Yew trees of Kingsley Vale are such wonderful examples of unpruned or managed trees, allowed to follow their natural form. Painted in great detail with a highly coloured palette.",
+            "price": 750.00,
+            "category": 1,
+            "image_url": "",
+            "image": "mj_example_image.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp02",
+            "name": "Geometric Web",
+            "description": " am very pleased to introduce my design: Geometric Web. The Geometric Web is a hand thrown spherical vase with the application of extremely detailed slip-trailing to create an undulating spider’s web.",
+            "price": 700.00,
+            "category": 2,
+            "image_url": "",
+            "image": "hw_example_image.jpg"
+        }
+    }
+]
