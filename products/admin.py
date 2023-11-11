@@ -8,6 +8,8 @@ class ProductAdmin(admin.ModelAdmin):
         'sku',
         'name',
         'category',
+        'artist',
+        'media',
         'price',
         'image',
     )
