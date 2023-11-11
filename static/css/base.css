@@ -92,6 +92,23 @@ body {
     z-index: -1;
 }
 
+a.category-badge {
+    color: #525252;
+}
+
+a.category-badge > span.badge:hover {
+    color: #FF7518;
+}
+
+a {
+    color: #525252;
+}
+
+a:hover {
+    color: #FF7518;
+    text-decoration: none;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
