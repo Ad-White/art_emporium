@@ -19,10 +19,10 @@
                 Art Category
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="art-category-link">
-                <a href="" class="dropdown-item">Paintings</a>
-                <a href="" class="dropdown-item">Ceramics</a>
-                <a href="" class="dropdown-item">Sculpture</a>
-                <a href="" class="dropdown-item">All Categories</a>
+                <a href="{% url 'products' %}?category=paintings" class="dropdown-item">Paintings</a>
+                <a href="{% url 'products' %}?category=ceramics" class="dropdown-item">Ceramics</a>
+                <a href="{% url 'products' %}?category=sculpture" class="dropdown-item">Sculpture</a>
+                <a href="{% url 'products' %}?category=paintings,ceramics,sculpture" class="dropdown-item">All Categories</a>
             </div>
         </li>
 
@@ -32,9 +32,9 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Limited Availability</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=limited_availability" class="dropdown-item">Limited Availability</a>
+                <a href="{% url 'products' %}?category=new_arrivals,limited_availability" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
