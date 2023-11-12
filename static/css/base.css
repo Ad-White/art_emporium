@@ -11,6 +11,10 @@ body {
     font-family: 'basic';
 }
 
+p {
+    color: #525252;
+}
+
 .logo {
     color: #F3E5AB;
     font-family: 'Playfair diplay sc';
