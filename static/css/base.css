@@ -11,6 +11,10 @@ body {
     font-family: 'basic';
 }
 
+h3 {
+    color: #525252;
+}
+
 p {
     color: #525252;
 }
@@ -66,6 +70,17 @@ p {
 .btn-grey:focus {
     background: #FF7518;
     color: #525252;
+}
+
+.btn-outline-grey {
+    border: 1px solid #525252;
+}
+
+.btn-outline-grey:hover,
+.btn-outline-grey:active,
+.btn-outline-grey:focus {
+    background: #FF7518;
+    color: #525252 !important;
 }
 
 .text-grey {
