@@ -128,7 +128,7 @@ a:hover {
     text-decoration: none;
 }
 
-/* Styling for the return to top of page arrow */
+/* Styling for the return to top of page arrow. Also update and remove links in shopping bag */
 .btt-button {
     height: 42px;
     width: 42px;
@@ -137,7 +137,9 @@ a:hover {
     right: 10px;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 
