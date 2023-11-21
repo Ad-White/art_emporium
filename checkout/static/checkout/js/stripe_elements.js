@@ -13,16 +13,16 @@ var elements = stripe.elements();
 var style = {
     base: {
         color: '#525252',
-        fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+        fontFamily: '"Basic", basic, sans- serif',
         fontSmoothing: 'antialiased',
         fontSize: '16px',
         '::placeholder': {
-            color: '#aab7c4'
+            color: '#525252'
         }
     },
     invalid: {
-        color: '#FF7518',
-        iconColor: '#FF7518'
+        color: '#DC3545',
+        iconColor: '#DC3545'
     }
 };
 var card = elements.create('card', { style: style });
