@@ -36,6 +36,17 @@
     border: 1px solid #525252;
 }
 
+/* Styling for Countries dropdown box */
+select,
+select option {
+    color: #525252;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #9EB9D4 !important;
+}
+
 /* Styling for spinner and overlay */
 #loading-overlay {
     display: none;
