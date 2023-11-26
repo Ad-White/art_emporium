@@ -105,7 +105,7 @@ def add_product(request):
 @login_required
 def edit_product(request, product_id):
     """ Edit an existing product in the store as admin """
-    if not request.use.is_superuser:
+    if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store administrators allowed!')
         return redirect(reverse('home'))
 
