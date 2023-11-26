@@ -39,7 +39,11 @@
                         {% for item in bag_items %}
                         <tr>
                             <td class="p-3 w-25">
-                                <img class="img-fluid rounded" src="{{ item.product.image.url }}">
+                                {% if item.product.image %}
+                                <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                                {% else %}
+                                <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                                {% endif %}
                             </td>
                             <td class="py-3">
                                 <p class="my-0"><strong>{{ item.product.name }}</strong></p>
@@ -102,7 +106,7 @@
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
-                                    <span class="text-uppercase text-grey">Continue Shopping</span>
+                                    <span class="text-uppercase">Continue Shopping</span>
                                 </a>
                                 <a href="{% url 'checkout' %}" class="btn form-button rounded-0">
                                     <span class="text-uppercase">Secure Checkout</span>
@@ -120,7 +124,7 @@
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
-                        <span class="text-uppercase text-grey">continue shopping</span>
+                        <span class="text-uppercase">continue shopping</span>
                     </a>
                 {% endif %}
             </div>
