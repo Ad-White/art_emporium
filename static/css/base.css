@@ -72,6 +72,22 @@ p {
     color: #525252;
 }
 
+.form-button {
+    font-family: 'mako';
+    background: #525252;
+    color: #FF7518;
+}
+
+.form-button:hover,
+.form-button:active,
+.form-button:focus,
+.btn-grey:hover,
+.btn-grey:active,
+.btn-grey:focus {
+    background: #FF7518;
+    color: #525252;
+}
+
 .btn-outline-grey {
     border: 1px solid #525252;
 }
