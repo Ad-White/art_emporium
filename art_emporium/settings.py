@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
+    'subscribe',
 
     #  Other Apps
     #  crispy-forms==1.14.0

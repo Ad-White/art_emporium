@@ -1,0 +1,28 @@
+<footer class="text-center">
+    <div class="container p-4">
+        <section class="">
+            <form action="{% url 'subscribe' %}" method="post">
+                <div class="row d-flex justify-content-center">
+                    {% csrf_token %}
+                    <div class="col-4">
+                        <p class="pt-2">Subscribe for our newsletter</p>
+                    </div>
+    
+                    <div class="col-4">
+                        <input id="name" name="name" class="form-control" placeholder="Your Name" />
+                    </div>
+    
+                    <div class="col-4">
+                        <input id="email" name="email" type="email" class="form-control" placeholder="Email address" />
+                    </div>
+    
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-outline-grey">
+                            <i class="fa fa-arrow-circle-right fa-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+</footer>
