@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
+from django.contrib.auth import get_user_model
 from django.core.mail import EmailMessage
 from django.core.validators import validate_email
 from django.core.exceptions import ValidationError
@@ -7,15 +8,23 @@ from django.core.exceptions import ValidationError
 from .models import SubscribedUsers
 
 
-# Create your views here.
 def subscribe(request):
+    """ Add's the name and email address of a user
+    wanting to subscribe to the sites newsletter """
     if request.method == 'POST':
         name = request.POST.get('name', None)
         email = request.POST.get('email', None)
 
         if not name or not email:
-            messages.error(request, 'Please fill out both input boxes')
+            messages.error(request, 'Please ensure the form is \
+                 filled out correctly.')
             return redirect("/")
+
+        subscribe_user = SubscribedUsers.objects.filter(email=email).first()
+        if subscribe_user:
+            messages.error(
+                request, f"Sorry, {email}. This email address is already subscribed.")
+            return redirect(request.META.get("HTTP_REFERER", "/"))
 
         try:
             validate_email(email)
