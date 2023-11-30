@@ -58,5 +58,140 @@
             "image_url": "",
             "image": "nightwing.jpg"
         }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp05",
+            "name": "The Autumn Herald",
+            "artist": "Marcus Jubb",
+            "media": "Oil painting on stretched canvas - 56 x 56 cm - Framed in black",
+            "description": "Painted tesselating leaves surround a comma butterfly/mask. An autumn figure imbueing the season.",
+            "price": 450.00,
+            "category": 1,
+            "image_url": "",
+            "image": "the_autumn_herald.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp06",
+            "name": "The Green Man",
+            "artist": "Marcus Jubb",
+            "media": "Oil painting on stretched canvas - 67 x 57 cm - Framed in black",
+            "description": "A richly painted picture of an ancient figure from the past and the message he may bring to the future.",
+            "price": 450.00,
+            "category": 1,
+            "image_url": "",
+            "image": "green_man.jpg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp07",
+            "name": "Journey Stone",
+            "artist": "Marcus Jubb",
+            "media": "Sandstone inlaid with a mosaic design",
+            "description": "A carved mosaic design inlaid with mirror and glass pieces.",
+            "price": 250.00,
+            "category": 3,
+            "image_url": "",
+            "image": "journey_stone.jpg"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp08",
+            "name": "Norfolk Iron Stone",
+            "artist": "Marcus Jubb",
+            "media": "Mosaic",
+            "description": "Picture Mosaic - 18 cm x 18 cm",
+            "price": 120.00,
+            "category": 4,
+            "image_url": "",
+            "image": "norfolk_iron_stone.jpg"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp09",
+            "name": "West Bay Cliffs",
+            "artist": "Marcus Jubb",
+            "media": "Picture Mosaic - 59 x 52 cm - Framed",
+            "description": "This picture of the Dorset coast is comprised of agrigate and flakes of stone gathered from the sight.",
+            "price": 490.00,
+            "category": 4,
+            "image_url": "",
+            "image": "cliffs_at_westbay.jpg"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp10",
+            "name": "Celtic Dragon",
+            "artist": "Heidi Warr",
+            "media": "Highly Decorated Earthenware",
+            "description": "These large towers are 17” high by 6” wide at the base and 4” wide at the top (all measurements are approximate).",
+            "price": 1150.00,
+            "category": 5,
+            "image_url": "",
+            "image": "celtic_large.jpg"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp11",
+            "name": "Celtic Bird",
+            "artist": "Heidi Warr",
+            "media": "Highly Decorated Earthenware",
+            "description": "The Celtic Bird small towers are limited to 9. The small tower measures 9 1/4 inches high, (all measurements are approximate).",
+            "price": 600.00,
+            "category": 5,
+            "image_url": "",
+            "image": "celtic_bird_small.jpg"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp12",
+            "name": "Wings Of Angels",
+            "artist": "Heidi Warr",
+            "media": "Highly Decorated Earthenware",
+            "description": "Symbolism and art create a wonderful blend of meaning and skill that artists convey in stunning ways. The Wings of Angels piece is a complex design incorporating the flow and beauty of peacock feathers with a stylised angel. The medium (approximately 7.5” high) pieces are limited editions of 7 ",
+            "price": 840.00,
+            "category": 2,
+            "image_url": "",
+            "image": "wings_of_angles_medium.jpg"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp13",
+            "name": "Battling Dragon and Octopus",
+            "artist": "Heidi Warr",
+            "media": "Highly Decorated Earthenware",
+            "description": "This piece is a limited edition of 5. The large towers are 17 inches high by 4 inches wide at the base. (all measurements are approximate).",
+            "price": 1940.00,
+            "category": 2,
+            "image_url": "",
+            "image": "battling_dragon_and_octopus.jpg"
+        }
     }
 ]

@@ -14,5 +14,29 @@
             "name": "ceramics",
             "friendly_name": "Ceramics"
         }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "sculpture",
+            "friendly_name": "Sculpture"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "new_arrivals",
+            "friendly_name": "New Arrivals"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "limited_availability",
+            "friendly_name": "Limited Availability"
+        }
     }
 ]
