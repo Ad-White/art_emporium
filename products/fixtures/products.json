@@ -28,5 +28,35 @@
             "image_url": "",
             "image": "hw_example_image.jpg"
         }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp03",
+            "name": "The Ancient Chestnut In Stocklinch",
+            "artist": "Marcus Jubb",
+            "media": "Oil Painting On Canvas - Framed- 62 cm x 62 cm",
+            "description": "This tree sits quietly in a corner of Stocklinch. A Pollarded Sweet Chestnut of great age and gnarled, with exquisit patterns.",
+            "price": 500.00,
+            "category": 1,
+            "image_url": "",
+            "image": "the_ancient_chestnut_in_stocklinch.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp04",
+            "name": "Night Wing",
+            "artist": "Marcus Jubb",
+            "media": "Oil on board - 64 x 54 cm - Framed in black & gold",
+            "description": "A symmetrical design of moth wings with elaborate colours.",
+            "price": 325.00,
+            "category": 1,
+            "image_url": "",
+            "image": "nightwing.jpg"
+        }
     }
 ]
