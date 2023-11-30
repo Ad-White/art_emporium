@@ -276,6 +276,11 @@ input[name='q']::placeholder {
     padding-bottom: 2px;
 }
 
+.artist-container {
+    width: 70%;
+    margin: auto;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

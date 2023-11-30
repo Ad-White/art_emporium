@@ -23,7 +23,8 @@ def subscribe(request):
         subscribe_user = SubscribedUsers.objects.filter(email=email).first()
         if subscribe_user:
             messages.error(
-                request, f"Sorry, {email}. This email address is already subscribed.")
+                request, f"Sorry, {email}. This email address is already \
+                    subscribed.")
             return redirect(request.META.get("HTTP_REFERER", "/"))
 
         try:
