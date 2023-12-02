@@ -4,6 +4,7 @@ html {
     background-color: #f3e5ab8f;
 }
 
+/* styling for the body */
 body {
     background: url('/media/homepage_background.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -11,50 +12,72 @@ body {
     font-family: 'basic';
 }
 
+/* Styling for headings */
 h3, h4, h6 {
     color: #525252;
 }
 
+/* Styling for paragraph text */
 p {
     color: #525252;
 }
 
+/* Styling for instances of 'delete' buttons */
+.text-danger {
+    color: #921f2a !important;
+}
+
+/* Styling for instances of 'Sold' notices */
+.text-sold {
+    color: #FF7518;
+}
+
+/* Styling for the logo */
 .logo {
     color: #F3E5AB;
     font-family: 'Playfair diplay sc';
 }
 
+/* Styling for the main logo link */
 .main-logo-link {
     width: fit-content;
 }
 
+/* Styling for Top Navigation */
 #topnav {
     background-color: #525252;
     color: #F3E5AB;
 }
 
-
+/* Styling for dropdown-menu */
 .dropdown-menu {
     background-color: #525252;
 }
 
+/* Styling for dropdown-item */
 .dropdown-item {
     color: #F3E5AB;
+    border-top: 1px solid #F3E5AB;
+    border-bottom: 1px solid #F3E5AB;
 }
 
+/* Styling for dropdown-item hover state */
 .dropdown-item:hover {
     color: #FF7518;
 }
 
+/* Styling used to colour the background banner */
 .bg-banner {
     background-color: #525252;
 }
 
+/* Styling used for main home page link to gallery */
 .home-message {
     color: #9EB9D4;
     font-family: 'mako';
 }
 
+/* Styling used for the browse button (e.g. 'continue browsing') */
 .browse-button {
     font-family: 'mako';
     background: #525252;
@@ -62,6 +85,7 @@ p {
     min-width: 260px;
 }
 
+/* Styling used for the browse button's various link states */
 .browse-button:hover,
 .browse-button:active,
 .browse-button:focus,
@@ -72,13 +96,14 @@ p {
     color: #525252;
 }
 
-/* Styling for form button */
+/* Styling for form buttons with 'solid' emphasis*/
 .form-button {
     font-family: 'mako';
     background: #525252;
     color: #FF7518;
 }
 
+/* Styling used for the form button's various link states */
 .form-button:hover,
 .form-button:active,
 .form-button:focus,
@@ -89,10 +114,12 @@ p {
     color: #525252;
 }
 
+/* Styling for buttons with outline as emphasis */
 .btn-outline-grey {
     border: 1px solid #525252;
 }
 
+/* Styling for various states of buttons with outline as emphasis */
 .btn-outline-grey:hover,
 .btn-outline-grey:active,
 .btn-outline-grey:focus {
@@ -100,6 +127,7 @@ p {
     color: #525252 !important;
 }
 
+/* Styling for text used (in suggested colours) */
 .text-grey {
     color: #525252 !important;
 }
@@ -114,10 +142,12 @@ p {
     color:#FF7518 !important;
 }
 
+/* Styling used for border (e.g. Order Success Form) */
 .border-grey {
     border: 1px solid #525252 !important;
 }
 
+/* Styling used for overlay */
 .overlay {
     height: 100%;
     width: 100%;
@@ -128,18 +158,22 @@ p {
     z-index: -1;
 }
 
+/* Styling used to inform of category subject */
 a.category-badge {
     color: #525252;
 }
 
+/* Styling used to inform of category subject - hover state */
 a.category-badge > span.badge:hover {
     color: #FF7518;
 }
 
+/* Styling used for text to inform of category subject */
 a {
     color: #525252;
 }
 
+/* Styling used for link to inform of category subject */
 a:hover {
     color: #FF7518;
     text-decoration: none;
@@ -167,7 +201,7 @@ a:hover {
     height: 0;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid #525252;
     position: absolute;
     top: -10px;
     right: 36px;
@@ -206,13 +240,15 @@ a:hover {
     border-bottom-color: #343a40 !important;
 }
 
+/* Styling for the bag bag-notification-wrapper */
 .bag-notification-wrapper {
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
-/* Styling for the return to top of page arrow. Also update and remove links in shopping bag */
+/* Styling for the 'return to top' of page arrow. 
+Also update and remove links in shopping bag */
 .btt-button {
     height: 42px;
     width: 42px;
@@ -240,11 +276,13 @@ input[name='q']::placeholder {
 }
 
 /* Product Form Styling */
+/* File button */
 .btn-file {
     position: relative;
     overflow: hidden;
 }
 
+/* Styling for product form input */
 .btn-file input[type="file"] {
     position: absolute;
     top: 0;
@@ -255,6 +293,7 @@ input[name='q']::placeholder {
     cursor: pointer;
 }
 
+/* Styling for checkbox on product form  */
 .custom-checkbox .custom-control-label::before {
     border-radius: 0;
     border-color: #dc3545;
@@ -276,12 +315,13 @@ input[name='q']::placeholder {
     padding-bottom: 2px;
 }
 
+/* Syling for the Artist's Container */
 .artist-container {
     width: 70%;
     margin: auto;
 }
 
-/* -------------------------------- Media Queries */
+/* Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {

@@ -42,7 +42,7 @@
                 {% if product.availability > 0 %}
                 <p class="mb-0 text-left font-weight-bold">£{{ product.price }}</p>
                 {% elif product.availability == 0 %}
-                <h3 class="text-danger font-weight-bold">Sold</h3>
+                <h4 class="text-sold font-weight-bold">Sold</h4>
                 <div class="col-12">
                     <a href="{% url 'products' %}" class="btn btn-outline-grey rounded-0 mt-5">
                         <span class="icon">
