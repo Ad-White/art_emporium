@@ -23,6 +23,8 @@ def add_to_bag(request, item_id):
 
     if item_id in list(bag.keys()):
         bag[item_id] += quantity
+        if bag[item_id] > product.availability:
+            bag[item_id] = product.availability
         messages.success(
             request, f'Updated {product.name} quantity to {bag[item_id]}')
     else:
@@ -43,6 +45,8 @@ def adjust_bag(request, item_id):
 
     if quantity > 0:
         bag[item_id] = quantity
+        if bag[item_id] > product.availability:
+            bag[item_id] = product.availability
         messages.success(
             request, f'Updated {product.name} quantity to {bag[item_id]}')
     else:
@@ -69,5 +73,6 @@ def remove_from_bag(request, item_id):
         return HttpResponse(status=200)
 
     except Exception as e:
-        messages.error(request, f'Sorry, there was an error removing item: {e}')
+        messages.error(
+            request, f'Sorry, there was an error removing item: {e}')
         return HttpResponse(status=500)
