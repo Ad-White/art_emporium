@@ -55,7 +55,7 @@
                 {% if request.user.is_superuser %}
                 <p class="ml-3 font-weight-bold">
                     <a href="{% url 'edit_product' product.id %}">Edit</a>
-                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                    <a class="confirm-delete text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                 </p>
                 {% endif %}
                 {% if not product.availability == 0 %}
@@ -117,5 +117,6 @@
 
 {% block postloadjs %}
 {{ block.super }}
+<script type="text/javascript" src="{% static 'products/js/delete_confirmation.js' %}"></script>
 {% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}
