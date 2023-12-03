@@ -1,14 +1,14 @@
 /* Height set to allow h-100 classes to work */
 html {
     height: 100%;
-    background-color: #f3e5ab8f;
+    background-color: #F3E5AB;
 }
 
 /* styling for the body */
 body {
-    background: url('/media/homepage_background.jpg') no-repeat center center fixed;
+    background: url('/media/homepage_background.png') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: calc(100vh - 1920px);
     font-family: 'basic';
 }
 
@@ -153,8 +153,8 @@ p {
     width: 100%;
     top: 0;
     left: 0;
-    position: fixed;
-    background: #F3E5AB;
+    position: absolute;
+    background: red;
     z-index: -1;
 }
 
