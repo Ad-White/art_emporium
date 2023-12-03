@@ -6,10 +6,11 @@ html {
 
 /* styling for the body */
 body {
-    background: url('/media/homepage_background.png') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 1920px);
+    /* background: url('/media/art_emporium_hero_image.png') no-repeat center center fixed;
+    background-size: cover; */
+    height: calc(100vh - 164px);
     font-family: 'basic';
+    background-color: #F3E5AB;
 }
 
 /* Styling for headings */
@@ -154,7 +155,7 @@ p {
     top: 0;
     left: 0;
     position: absolute;
-    background: red;
+    background: #F3E5AB;
     z-index: -1;
 }
 
