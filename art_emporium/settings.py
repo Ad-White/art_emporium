@@ -59,7 +59,7 @@ INSTALLED_APPS = [
 
     #  Other Apps
     #  crispy-forms==1.14.0
-    'crispy_forms'
+    'crispy_forms',
     'storages',
 ]
 
