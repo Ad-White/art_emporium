@@ -71,13 +71,13 @@ class StripeWH_Handler:
         if username != 'AnonymousUser':
             profile = UserProfile.objects.get(user__username=username)
             if save_info:
-                profile.defualt_phone_number = shipping_details.phone,
-                profile.defualt_country = shipping_details.address.country,
-                profile.defualt_postcode = shipping_details.address.postal_code,
-                profile.defualt_town_or_city = shipping_details.address.city,
-                profile.defualt_street_address1 = shipping_details.address.line1,
-                profile.defualt_street_address2 = shipping_details.address.line2,
-                profile.defualt_county = shipping_details.address.state,
+                profile.defualt_phone_number = shipping_details.phone
+                profile.defualt_country = shipping_details.address.country
+                profile.defualt_postcode = shipping_details.address.postal_code
+                profile.defualt_town_or_city = shipping_details.address.city
+                profile.defualt_street_address1 = shipping_details.address.line1
+                profile.defualt_street_address2 = shipping_details.address.line2
+                profile.defualt_county = shipping_details.address.state
                 profile.save()
 
         order_exists = False
