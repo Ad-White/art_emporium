@@ -6,9 +6,9 @@ html {
 
 /* styling for the body */
 body {
-    background: url('/media/art_emporium_hero_image.png') no-repeat center center fixed;
+    /* background: url('/media/art_emporium_hero_image.png') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: calc(100vh - 164px); */
     font-family: 'basic';
     background-color: #F3E5AB;
 }
