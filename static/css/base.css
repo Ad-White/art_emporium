@@ -6,9 +6,9 @@ html {
 
 /* styling for the body */
 body {
-    /* background: url('/media/art_emporium_hero_image.png') no-repeat center center fixed;
+    background: url('/media/art_emporium_hero_image.png') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px); */
+    height: calc(100vh - 164px);
     font-family: 'basic';
     background-color: #F3E5AB;
 }
@@ -31,6 +31,15 @@ p {
 /* Styling for instances of 'Sold' notices */
 .text-sold {
     color: #FF7518;
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 /* Styling for the logo */
@@ -354,6 +363,42 @@ input[name='q']::placeholder {
 
     body {
         height: calc(100vh - 116px);
+    }
+    /* Reduce font size on mobile main page */
+    .display-4.logo.text-grey {
+        font-size: 2rem;
+    }
+    /* Reduce padding on nav link */
+    .nav-link {
+        padding: 0.15rem;
+    }
+    /* Reduce font awesome icons */
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+    /* Reduce navbar toggle button */
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+    /* Reduce font size of delivery banner */
+    #bg-banner h4 {
+        font-size: .9rem;
+    }
+    /* Increment and decrement to ignore larger css */
+    .btn.btn-outline-grey.rounded-0,
+    .btn.btn-grey.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-grey.rounded-0,
+    .btn.btn-grey.rounded-0 {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
     }
 }
 
