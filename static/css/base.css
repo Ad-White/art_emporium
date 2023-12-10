@@ -15,12 +15,12 @@ body {
 
 /* Styling for headings */
 h3, h4, h6 {
-    color: #525252;
+    color: #292929;
 }
 
 /* Styling for paragraph text */
 p {
-    color: #525252;
+    color: #292929;
 }
 
 /* Styling for instances of 'delete' buttons */
@@ -30,7 +30,7 @@ p {
 
 /* Styling for instances of 'Sold' notices */
 .text-sold {
-    color: #FF7518;
+    color: #FF9E57;
 }
 
 /* from Bulma */
@@ -55,13 +55,13 @@ p {
 
 /* Styling for Top Navigation */
 #topnav {
-    background-color: #525252;
+    background-color: #292929;
     color: #F3E5AB;
 }
 
 /* Styling for dropdown-menu */
 .dropdown-menu {
-    background-color: #525252;
+    background-color: #292929;
 }
 
 /* Styling for dropdown-item */
@@ -73,12 +73,12 @@ p {
 
 /* Styling for dropdown-item hover state */
 .dropdown-item:hover {
-    color: #FF7518;
+    color: #FF9E57;
 }
 
 /* Styling used to colour the background banner */
 .bg-banner {
-    background-color: #525252;
+    background-color: #292929;
 }
 
 /* Styling used for main home page link to gallery */
@@ -90,8 +90,8 @@ p {
 /* Styling used for the browse button (e.g. 'continue browsing') */
 .browse-button {
     font-family: 'mako';
-    background: #525252;
-    color: #FF7518;
+    background: #292929;
+    color: #FF9E57;
     min-width: 260px;
 }
 
@@ -102,15 +102,15 @@ p {
 .btn-grey:hover,
 .btn-grey:active,
 .btn-grey:focus {
-    background: #FF7518;
-    color: #525252;
+    background: #FF9E57;
+    color: #292929;
 }
 
-/* Styling for form buttons with 'solid' emphasis*/
+/* Styling for form buttons with 'solid' emphasis */
 .form-button {
     font-family: 'mako';
-    background: #525252;
-    color: #FF7518;
+    background: #292929;
+    color: #FF9E57;
 }
 
 /* Styling used for the form button's various link states */
@@ -120,26 +120,26 @@ p {
 .btn-grey:hover,
 .btn-grey:active,
 .btn-grey:focus {
-    background: #FF7518;
-    color: #525252;
+    background: #FF9E57;
+    color: #292929;
 }
 
 /* Styling for buttons with outline as emphasis */
 .btn-outline-grey {
-    border: 1px solid #525252;
+    border: 1px solid #292929;
 }
 
 /* Styling for various states of buttons with outline as emphasis */
 .btn-outline-grey:hover,
 .btn-outline-grey:active,
 .btn-outline-grey:focus {
-    background: #FF7518;
-    color: #525252 !important;
+    background: #FF9E57;
+    color: #292929 !important;
 }
 
 /* Styling for text used (in suggested colours) */
 .text-grey {
-    color: #525252 !important;
+    color: #292929 !important;
 }
 
 .text-yellow {
@@ -149,12 +149,12 @@ p {
 .text-orange {
     font-family: 'mako';
     font-weight: bold;
-    color:#FF7518 !important;
+    color: #FF9E57 !important;
 }
 
 /* Styling used for border (e.g. Order Success Form) */
 .border-grey {
-    border: 1px solid #525252 !important;
+    border: 1px solid #292929 !important;
 }
 
 /* Styling used for overlay */
@@ -170,22 +170,22 @@ p {
 
 /* Styling used to inform of category subject */
 a.category-badge {
-    color: #525252;
+    color: #292929;
 }
 
 /* Styling used to inform of category subject - hover state */
 a.category-badge > span.badge:hover {
-    color: #FF7518;
+    color: #FF9E57;
 }
 
 /* Styling used for text to inform of category subject */
 a {
-    color: #525252;
+    color: #292929;
 }
 
 /* Styling used for link to inform of category subject */
 a:hover {
-    color: #FF7518;
+    color: #FF9E57;
     text-decoration: none;
 }
 
@@ -211,7 +211,7 @@ a:hover {
     height: 0;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-bottom: 10px solid #525252;
+    border-bottom: 10px solid #292929;
     position: absolute;
     top: -10px;
     right: 36px;
@@ -406,12 +406,12 @@ input[name='q']::placeholder {
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
     /* mt-4 */
-    color: #525252;
+    color: #292929;
     /* text-secondary */
 }
 
 .allauth-form-inner-content input {
-    border-color: #525252;
+    border-color: #292929;
     border-radius: 0;
 }
 
@@ -420,7 +420,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content input::placeholder {
-    color: #525252;
+    color: #292929;
 }
 
 .allauth-form-inner-content button,
@@ -428,15 +428,15 @@ input[name='q']::placeholder {
     /* btn */
     display: inline-block;
     font-weight: 400;
-    color: #FF7518;
+    color: #FF9E57;
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #525252;
-    border: 1px solid #525252;
+    background-color: #292929;
+    border: 1px solid #292929;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -448,12 +448,12 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {
-    color: #525252;
-    background-color: #FF7518;
-    border-color: #FF7518;
+    color: #292929;
+    background-color: #FF9E57;
+    border-color: #FF9E57;
 }
 
 .allauth-form-inner-content a {
-    color: #525252;
+    color: #292929;
     /* text-info */
 }
