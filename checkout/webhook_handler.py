@@ -75,8 +75,10 @@ class StripeWH_Handler:
                 profile.defualt_country = shipping_details.address.country
                 profile.defualt_postcode = shipping_details.address.postal_code
                 profile.defualt_town_or_city = shipping_details.address.city
-                profile.defualt_street_address1 = shipping_details.address.line1
-                profile.defualt_street_address2 = shipping_details.address.line2
+                profile.defualt_street_address1 = \
+                    shipping_details.address.line1
+                profile.defualt_street_address2 = \
+                    shipping_details.address.line2
                 profile.defualt_county = shipping_details.address.state
                 profile.save()
 
