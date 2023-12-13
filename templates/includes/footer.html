@@ -1,6 +1,6 @@
 <footer class="text-center fixed-dt">
     <div class="container p-4"><hr>
-        <section class="footer">
+        <div class="footer">
             <form action="{% url 'subscribe' %}" method="post">
                 <div class="row d-flex justify-content-center">
                     {% csrf_token %}
@@ -9,11 +9,11 @@
                     </div>
     
                     <div class="col-12 col-lg-3">
-                        <input id="name" name="name" class="form-control" placeholder="Your Name" />
+                        <input id="name" name="name" class="form-control" placeholder="Your Name">
                     </div>
     
                     <div class="col-12 col-lg-3">
-                        <input id="email" name="email" type="email" class="form-control" placeholder="Email Address" />
+                        <input id="email" name="email" type="email" class="form-control" placeholder="Email Address">
                     </div>
     
                     <div class="col-12 col-lg-3">
@@ -23,6 +23,6 @@
                     </div>
                 </div>
             </form>
-        </section>
+        </div>
     </div>
 </footer>
