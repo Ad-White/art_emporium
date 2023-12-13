@@ -82,7 +82,7 @@ p {
 
 /* Styling used for main home page link to gallery */
 .home-message {
-    color: #9EB9D4;
+    color: #2B4773;
     font-family: 'mako';
 }
 
@@ -274,7 +274,7 @@ Also update and remove links in shopping bag */
 
 /* Styling for the search box placeholder */
 input[name='q']::placeholder {
-    color: #9EB9D4;
+    color: #2B4773;
 }
 
 /* Shopping Bag Notification Wrapper */
