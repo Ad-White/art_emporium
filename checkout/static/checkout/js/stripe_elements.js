@@ -64,7 +64,7 @@ form.addEventListener('submit', function(ev) {
         'csrfmiddlewaretoken': csrfToken,
         'client_secret': clientSecret,
         'save_info': saveInfo,
-    }
+    };
     var url = '/checkout/cache_checkout_data/';
 
     $.post(url, postData).done(function() {
@@ -120,5 +120,5 @@ form.addEventListener('submit', function(ev) {
     }).fail(function() {
         // This function reloads the page. The error will be in django messages
         location.reload();
-    })
+    });
 });
