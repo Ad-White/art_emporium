@@ -323,17 +323,120 @@ amiresponsive
 
 The live deployed application can be found on [Heroku](https://art-emporium-7f199f15f823.herokuapp.com/).
 
-### Relational Database
+### PostgresSql - Relational Database
 
-This project uses [ElephantSql](https:/elephantsql/.com) for the Relational Database.
+This project uses a PostgresSQL database from [ElephantSql](https:/elephantsql/.com) for the relational database.
+
+Sign in using your GitHub account and 'create a new instance' in order to create a new database.
+Give the database a name, e.g. art-emporium.
+Choose a plan relevant to your needs. At the time of making this project there was a 'Tiny Turtle' plan for free.
+There's no need to fill in the tags, so leave them blank and proceed to select the closest data center to yourself.
+This should then complete creation and allow you to view your database URL and PASSWORD.
 
 ### Heroku Deployment
 
-This project uses [Heroku](https://www.heroku.com), a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
+This project uses [Heroku](https://www.heroku.com), a platform as a service that enables developers to build, run, and operate applications entirely in the cloud.
+
+Create a new app by selecting the option from the dropdown menu. Provide a unique app name and choose the region closest to yourself.
+You will need to set up your Config Variables to set up your environment. Examples of the keys used are in the screenshot that follows. Add the values that are relevant to your own project.
+
+![screenshot](documentation/heroku_config_vars.png)
+
+In order for Heroku to function correctly, you will need to create a Procfile. Create one in your own project at the same level as the main project folder and settings.py folder, then add:
+
+`web: gunicorn art_emporium.wsgi:application`, on a single line.
+
+You will need to install the requirements.txt file. Do this using a pip freeze command in the CLI as follows:
+
+`pip3 install -r requirements.txt`
+
+Once the steps above have been completed, you can now select to connect your GitHub repository to Heroku by using the 'automatic deployment' option in the Heroku app. At this point the your website should have been deployed to Heroku, and you should be able to view it online as a live site.
 
 ### Amazon Web Services
 
+### S3 Bucket and IAM
+
 This project uses [AWS](https://aws.amazon.com) for storing all static and images used throughout the website.
+
+Create an account with AWS and log-in.
+Create an S3 bucket and name it identically to your Heroku app name. As with Elephant and Heroku, you will need to select a region closest to yourself.
+Do not 'block all public access', therfore uncheck and accept it. Ensure you have 'ACL's' enabled and select 'bucket owner preferred'.
+You will need to turn on static website hosting and include index.html and error.html from within the Properties tab.
+Next, within the 'permissions' tab you should add the CORS configuration as shown below:
+
+`[
+    {
+        "AllowedHeaders": [
+            "Authorization"
+        ],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": []
+    }
+]`
+
+You will need to generate a bucket policy and add it to the 'bucket policy editor'. The policy I have used is shown below:
+
+`{
+    "Version": "2012-10-17",
+    "Id": "Policy1701812617944",
+    "Statement": [
+        {
+            "Sid": "Stmt1701812615252",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::art-emporium/*"
+        }
+    ]
+}`
+Be sure to take a copy and store your Amazon Resource Name.
+Next you will need to enable the list to be open for everyone from with the 'ACL'.
+Following on from the above, you will need to access the 'identity and access management' from AWS services.
+You will need to create a new group and give a name, from within the 'user groups' menu option.
+Select the permissions tab, find the 'add permissions' option and 'attach policies'. Choose your policy and add permissions.
+Continuing on, you should select the 'import managed policy' link and choose the AmazonsS3FullAccess policy and import it.
+The policy I have is shown below:
+
+`{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::art-emporium",
+                "arn:aws:s3:::art-emporium/*"
+            ]
+        }
+    ]
+}`
+
+From the User Groups you need to 'add user' and attach your policy to this user. Be sure to copy and save the .csv file as you cannot go back once you go past this point. It contains sensitive information containing your 'Access Key Id' and 'Secret Access Key'.
+You will require AWS to handle your static files from this point onwards. So ensure to remove the key/value pair within Heroku, if one exists.
+Add a media folder within AWS S3, and select all the neccessary images to be uploaded to your site. Also, ensure you have granted access (grant public read access) within the Manage Public Permissions section. You can now upload your images to the media folder.
+
+### Stripe API
+
+Create an account with Stripe and log-in.
+You will require the two keys, 'Publishable Key' and 'Secret Key'. You can find these on their platform by clicking the 'API keys for developers' link.
+The page should display them under the API Keys tab within the Developers page, between 'Overview' and 'Webhooks'.
+To handle any possible interruptions during the transactio process. Webhooks can be included.
+You will need to set up a Wehook Endpoint, and set it to 'receive all events'. A Signing Secret Webhook Key should be created. 
+Example of webhook key below:
+
+`https://art-emporium-7f199f15f823.herokuapp.com/checkout/wh/`
+
+### Gmail API
+
+This project has Gmail in order to handle sending emails to users. It helps with account verification and order confirmations.
+Search for Google Accounts Settings and look for the option called App Passwords. Name the app type as you wish, e.g. "mail" or "django-mail".
+You will be given a 16 character API Key. Consisting of an 'email host user' and 'email host password'.
+Be sure to save this somewhere secure.
 
 ### Local Deployment
 
@@ -343,22 +446,22 @@ This project can be cloned or forked in order to make a local copy on your own s
 
 You can clone the repository by following these steps:
 
-1. Go to the [GitHub repository](https://art-emporium-7f199f15f823.herokuapp.com/)
-2. Locate the Code button above the list of files and click it
-3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
-4. Open Git shell or Terminal
-5. Change the current working directory to the one where you want the cloned directory
-6. In your IDE Terminal, type the following command to clone my repository:- `git clone https://art-emporium-7f199f15f823.herokuapp.com.git`
-7. Press Enter to create your local clone.
+- Go to the [GitHub repository](https://art-emporium-7f199f15f823.herokuapp.com/)
+- Locate the Code button above the list of files and click it
+- Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
+- Open Git shell or Terminal
+- Change the current working directory to the one where you want the cloned directory
+- In your IDE Terminal, type the following command to clone my repository:- `git clone https://art-emporium-7f199f15f823.herokuapp.com.git`
+- Press Enter to create your local clone.
 
 #### Forking
 
 By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
 You can fork this repository by using the following steps:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Ad-White/art_emporium)
-2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
+- Log in to GitHub and locate the [GitHub Repository](https://github.com/Ad-White/art_emporium)
+- At the top of the Repository just above the "Settings" Button on the menu, locate the "Fork" Button.
+- Once clicked, you should now have a copy of the original repository in your own GitHub account.
 
 ## Testing
 
@@ -381,7 +484,7 @@ All images/photographs used throughout this site have been kindly permitted for 
   
 ### Acknowledgments
 
-- I would like to thank my Code Institute mentor, Rory. For their consistant and  invaluable feedback, support and encouragement throughout the development of this project.
-- I would like to thank my tutor, Ashley Oliver from the College Of West Anglia, for their understanding during what became a troublesome time, and informative responces to my questions at various stages of developing this project.
+- I would like to thank my Code Institute mentor, Rory. For their consistant and invaluable feedback, support and encouragement throughout the development of this project.
+- I would like to thank my tutor, Ashley Oliver from the College Of West Anglia, for their understanding during what became a troublesome time, and informative responses to my questions at various stages of developing this project.
 - I would like to thank my new 'Coding Buddies', Jacob and Agy, for their encouragement throughout my time at the Code Institute.
-- I would like to thank my partner Chelle, for her excellent patience as a sound-board, for believing in me, and continuing to support me in making this transition into software development.
+- I would like to thank my partner Chelle, for her excellent patience with me as I created this project.
