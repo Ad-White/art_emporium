@@ -15,7 +15,7 @@ Testing By URI:
 
 | Testing URI | W3C URL | Screenshot |
 | --- | --- | --- |
-| By URI | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fart-emporium-7f199f15f823.herokuapp.com%2F) | ![screenshot](documentation/testing_html_by_url.png) |
+| By URI | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fart-emporium-7f199f15f823.herokuapp.com%2F) | ![screenshot](documentation/testing_html/testing_html_by_url.png) |
 
 Testing by Direct Input:
 
@@ -50,15 +50,15 @@ I have used the [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/) applicati
 Initial results showed a few "trailing white spaces". I have been through all files and corrected any issues.
 Results show that 'All is clear, no errors found'.
 
-[Link to Python Linter Screenshots](documentation/testing_python).
+[Link to Python Linter Screenshots](documentation/testing_python)
 
 ## Browser Compatibility
 
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
-All resulting screenshots from testing using [Chrome](documentation/chrome).
-All resulting screenshots from testing using [Firefox](documentation/firefox).
-All resulting screenshots from testing using [Safari](documentation/safari).
+- All resulting screenshots from testing using [Chrome](documentation/chrome)
+- All resulting screenshots from testing using [Firefox](documentation/firefox)
+- All resulting screenshots from testing using [Safari](documentation/safari)
 
 Results find no compatability errors or issues.
 
@@ -66,9 +66,9 @@ Results find no compatability errors or issues.
 
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
-All resulting screenshots for [mobile testing](documentation/safari).
-All resulting screenshots for [tablet testing](documentation/tablet).
-All resulting screenshots for [desktop testing](documentation/chrome).
+- All resulting screenshots for [mobile testing](documentation/safari)
+- All resulting screenshots for [tablet testing](documentation/tablet)
+- All resulting screenshots for [desktop testing](documentation/chrome)
 
 Physical testing has been conducted using mobile and desktop devices. Tablet testing has been conducted using Google Dev Tools.
 All testing has resulted with devices behaving as expected.
@@ -80,18 +80,18 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 Testing conducted for Navigation on mobile and desktop.
 
 | Test Used | Page | Size | Screenshot |
+| --- | --- | --- | --- |
+| Navigation | Homepage | Mobile | ![screenshot](documentation/testing_lighthouse/mobile/home_lth_mb.png) |
+| Navigation | Products | Mobile | ![screenshot](documentation/testing_lighthouse/mobile/products_lth_mb.png) |
+| Navigation | Product Details | Mobile | ![screenshot](documentation/testing_lighthouse/mobile/product_details_lth_mb.png) |
+| Navigation | Shopping Bag | Mobile | ![screenshot](documentation/testing_lighthouse/mobile/shopping_bag_lth_mb.png) |
+| Navigation | Artists | Mobile | ![screenshot](documentation/testing_lighthouse/mobile/artists_lth_mb.png) |
 | --- | --- | --- | --- | --- |
-| Navigation | Homepage | Mobile | ![screenshot](documentation/testing_lighthouse/mobile/home_lth_mb) |
-| Navigation | Products | Mobile | ![screenshot](documentation/testing_lighthouse/mobile/products_lth_mb) |
-| Navigation | Product Details | Mobile | ![screenshot](documentation/testing_lighthouse/mobile/product_details_lth_mb) |
-| Navigation | Shopping Bag | Mobile | ![screenshot](documentation/testing_lighthouse/mobile/shopping_bag_lth_mb) |
-| Navigation | Artists | Mobile | ![screenshot](documentation/testing_lighthouse/mobile/artists_lth_mb) |
-| --- | --- | --- | --- | --- |
-| Navigation | Homepage | Desktop | ![screenshot](documentation/testing_lighthouse/desktop/home_lth_dt) |
-| Navigation | Products | Desktop | ![screenshot](documentation/testing_lighthouse/desktop/products_lth_dt) |
-| Navigation | Product Details | Desktop | ![screenshot](documentation/testing_lighthouse/desktop/product_details_lth_dt) |
-| Navigation | Shopping Bag | Desktop | ![screenshot](documentation/testing_lighthouse/desktop/shopping_bag_lth_dt) |
-| Navigation | Artists | Desktop | ![screenshot](documentation/testing_lighthouse/desktop/artists_lth_dt) |
+| Navigation | Homepage | Desktop | ![screenshot](documentation/testing_lighthouse/desktop/home_lth_dt.png) |
+| Navigation | Products | Desktop | ![screenshot](documentation/testing_lighthouse/desktop/products_lth_dt.png) |
+| Navigation | Product Details | Desktop | ![screenshot](documentation/testing_lighthouse/desktop/product_details_lth_dt.png) |
+| Navigation | Shopping Bag | Desktop | ![screenshot](documentation/testing_lighthouse/desktop/shopping_bag_lth_dt.png) |
+| Navigation | Artists | Desktop | ![screenshot](documentation/testing_lighthouse/desktop/artists_lth_dt.png) |
 
 After my initial testing, the results suggested that I increase the contrast I had chosen for the `.home-message` and search box placeholder.
 Therefore, I have since changed from the original "Powder Blue" used throughout development, to a darker shade of blue called "Yinmin Blue", (#2B4773).
@@ -103,7 +103,7 @@ This change can be seen on the deployed website.
 | --- | --- |
 | As a new site user, I would like to be able to see immediately how this website is inviting me to view a range of artwork for sale. | ![screenshot](documentation/chrome/homepage.png) |
 | As a new site user, I would like to be able to view a gallery of artwork, and have the ability to easily navigate my way to various types of art products. | ![screenshot](documentation/chrome/products.png) |
-| As a new site user, I would like to be able to perform a search of the various products available on the website. Aiding my finding an art piece I would like to purchase. | ![screenshot](documentation/chrome/search.png)  |
+| As a new site user, I would like to be able to perform a search of the various products available on the website. Aiding my finding an art piece I would like to purchase. | ![screenshot](documentation/chrome/sort_by_dropdown.png)  |
 | As a new site user, I would like to access more detail assocciated with an individul piece of art. Such as the media type used, the artist that produced it and the price and availabilty of the piece, before purchase. | ![screenshot](documentation/chrome/product_details.png) |
 | As a new site user, I would like to be able to discover information relating to each of the artists that are responsible for producing the art I see within the website. | ![screenshot](documentation/firefox/artists.png) |
 | As a new site user, I would like to add an item I have found into a shopping bag. Allowing me to further browse the gallery for more pieces I may like to purchase. Knowing the item I have added to the shopping bag is there ready for me to complete my transaction when I am ready to do so. | ![screenshot](documentation/firefox/add_to_bag.png) |
@@ -127,7 +127,7 @@ All testing has resulted in what I hope to expect.
 
 ## Automated Testing
 
-To date no automated testing has been conducted. Although it is on my 'to do' list. 
+To date no automated testing has been conducted. Although it is on my 'to do' list.
 
 ## Bugs
 
