@@ -2,8 +2,6 @@ Readme.md
 
 # Art Emporium
 
-![screenshot](documentation/art_emporium_site.png/)
-
 The purpose of this project is to implement a full-stack website. One that will provide an e-commerce platform for a store owner to aid the selling of exquisite, hand-made art. It is for demonstative purposes only.
 I will implement various technologies to work together in order to achieve this aim. This site will be a combination of HTML, CSS, Javascript (in the form of JQuery), for handling the front-end. The back-end will be controlled by using Python and in particular, by implementing the Django framework. The added bonus of such being that Django comes with its ability to build an Administration area to maintain all of the necessary products, users, orders details and other information that will be stored in a database. The database will be provided at first using SQLite for development, then exported to ElephantSQL in the cloud. As the site will be hosted using Heroku, (which uses an ephemeral filesystem). All images and static files will need to be served using cloud based services. I aim to achieve this by using Amazon's Web Services.
 The commerce and payment side of things will be handled by implementing the payment system provided by Stripe.
