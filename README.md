@@ -21,7 +21,7 @@ In addition to this, I will expect a store user of varying technical knowledge a
 
 - As a new site user, I would like to be able to perform a search of the various products available on the website. Aiding my finding an art piece I would like to purchase.
 
-- As a new site user, I would like to access more detail assocciated with an individul piece of art. Such as the media type used, the artist that produced it and the price and availabilty of the piece, before purchase.
+- As a new site user, I would like to access more detail associated with an individul piece of art. Such as the media type used, the artist that produced it and the price and availabilty of the piece, before purchase.
 
 - As a new site user, I would like to be able to discover information relating to each of the artists that are responsible for producing the art I see within the website.
 
