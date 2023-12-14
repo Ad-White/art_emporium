@@ -1,5 +1,3 @@
-Readme.md
-
 # Art Emporium
 
 The purpose of this project is to implement a full-stack website. One that will provide an e-commerce platform for a store owner to aid the selling of exquisite, hand-made art. It is for demonstative purposes only.
