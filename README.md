@@ -193,7 +193,7 @@ This project uses a relational database structure. Using software by Lucid, I ha
 Directly beneath this, there are links provided to further breakdown their search into separate categories. Giving the user the ability to find products by Category, Artist, or Price. It also features a Special Offers link to bring back items from the database, such as New Arrivals or products of Limited Availabilty.
 Alongside this, there is a "Sort By" dropbox to order the results by Category or Artist. Either alphabetically, A-Z, Z-A. It also provides the user the ability to order all products by price. Either, High to Low or Low to High respectfully.
 
-![screenshot](documentation/search.png)
+![screenshot](documentation/chrome/search.png)
 
 **My Profile Page**
 
