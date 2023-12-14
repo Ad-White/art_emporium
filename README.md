@@ -223,7 +223,7 @@ Once the payment field has been completed, pressing the Complete Order button fi
 
 **Artists Page**
 
-- Within the navigation system for this website, I have included a page to contain the profile information assocciated to each of the artists featured within the site. Allowing user's the ability to gain valuable information as to the artists history.
+- Within the navigation system for this website, I have included a page to contain the profile information associated to each of the artists featured within the site. Allowing user's the ability to gain valuable information as to the artists history.
 
 ![screenshot](documentation/chrome/artists.png)
 
