@@ -133,11 +133,19 @@ To date no automated testing has been conducted. Although it is on my 'to do' li
 
 Throughout developing this application, I have used Google Dev Tools to help pinpoint any errors. I have tested the deployed site as well, for functionality after development.
 
-- Bug 1:
-
 ## Fixed Bugs
 
-- Bug 1:
+- Bug 1: A bug I had inadvertanly introduced myself whilst making sure that my python code was PEP8 compliant. I shortened a few lines of code within the settings.py file, relating to Allauth's password and verification statements. Thereby breaking the sites ability to allow any new users to register to the site. Ooops!
+I have found and fixed this issue.
+
+## Unfixed Bugs
+
+- Bug 1: I have throughout development and deployment struggled to see why the overlay to cover the background image I had in place for the site, just does not work. I may be pretty code blind by now. So, for the moment, in order to stop it appearing within the console as an error. I have removed it. I will continue to look and find out why.
+
+- Bug 2: Failing webhook. I have a success rate of 60% in relation to the webhook I have implemented. It relates to the payment_intent_success webhook. I have researched for hours, but have had no success myself. My mentor, Rory has also tried to help. However, it doesn't appear to be an easy fix.
+Again, I will not give up on this in order to find the solution to the problem.
+
+- Bug 3: Gmail not working. I have not been able to get gmail to work as I had hoped. As I have spent a lot of time with Bug 2. I still need to continue to research as to why the confirmation messages are not sending out. My suspicions are that it may have something to do with Google's strict security policy, and perhaps how it may have been updated?
 
 
 There are no remaining bugs that I am aware of.
