@@ -158,38 +158,38 @@ This project uses a relational database structure. Using software by Lucid, I ha
 **Responsive Design**
 
 - A mobile first, responsive design to help provide site users with a similar experience across a range of web browsers and devices. I have used the Bootstrap framework to accomplish this.
-	 
-![screenshot](documentation/.png)
+
+![screenshot](documentation/safari/homepage.png)
 
 **Custom Logo**
 
 - A custom logo design for user's to easily identify the website.
 
-![screeshot](documentation/.png)
+![screeshot](documentation/playfair_display_sc.png)
 
 **Favicon**
 
 - A custom favicon, making it easy to identify this site alongside others in open tabs within the users browser.
 
-![screenshot](documentation/.png)
+![screenshot](documentation/ae_favicon.png)
 
 **Registration System**
 
 - A registration system to enable site visitors to create a user account. Giving them a robust and safe way to sign-in and out whenever they wish. I have used Django's Allauth in order to achieve this functionality.
 
-![screenshot](documentation/.png)
+![screenshot](documentation/chrome/sign_in.png)
 
 **Navigation Menu**
 
 - An easy to use navigation system for user's to travel between site areas. Implemented via the use of the Bootstrap framework.
 
-![screenshot](documentation/navigation_system.png)
+![screenshot](documentation/safari/navigation.png)
 
 **Gallery/Products Page**
 
-- The Gallery/Products page features a collection of all the products on the site. Giving site visitor's instant access to investigate further any of the products and their corresponding details. 
+- The Gallery/Products page features a collection of all the products on the site. Giving site visitor's instant access to investigate further any of the products and their corresponding details.
 
-![screenshot](documentation/.png)
+![screenshot](documentation/tablet/products.png)
 
 **Search Functionality**
 
@@ -197,35 +197,45 @@ This project uses a relational database structure. Using software by Lucid, I ha
 Directly beneath this, there are links provided to further breakdown their search into separate categories. Giving the user the ability to find products by Category, Artist, or Price. It also features a Special Offers link to bring back items from the database, such as New Arrivals or products of Limited Availabilty.
 Alongside this, there is a "Sort By" dropbox to order the results by Category or Artist. Either alphabetically, A-Z, Z-A. It also provides the user the ability to order all products by price. Either, High to Low or Low to High respectfully.
 
-![screenshot](documentation/search_bar.png)
+![screenshot](documentation/search.png)
 
 **My Profile Page**
 
 - The Profile page is accessable by using the My Account link. It provides a feature to allow each user their own space to store their preferred delivery details and email address. This allows the user a save time when they return to the site to make any future purchases.
 - The page also includes an Order History of any previous orders they have completed.
 
-![screenshot](documentation/.png)
+![screenshot](documentation/chrome/profile.png)
 
 **Shopping Bag**
 
 - Any products the user has opted to purchase are added to a shopping bag. This is accessable at any time, from any page of the site. It allows for any adjustments to be made. E.g. Removing items, increasing items to be purchased. It also allows user's the option to return and continue shopping, or to continue to the secure checkout page in order to finalise their purchase.
+
+![screenshot](documentation/chrome/shopping_bag.png)
 
 **Checkout Page**
 
 - Once a site visitor is happy with their selected product/s. The checkout page prompts the user to fill in the form presented with their details and delivery information. It also allows the user the option to tick a checkbox which will then save this delivery information to their profile. Allowing the this information to be pre-filled upon future purchases.
 Once the payment field has been completed, pressing the Complete Order button finalises the transaction using Stripe services. Whilst this is completing, there is pre-loading page to ensure the user that 'something' is happening for this duration of time.
 
+![screenshot](documentation/tablet/checkout.png)
+
 **Order Confirmation Page**
 
 - Upon a successful purchase, the user is provided with an Order Confirmation page, detailing the shopping bag contents, price of purchase, delivery information and billing information. A "success" message is displayed using Bootstrap's Toasts components, indicating that a confirmation email will be sent to the email address provided during the purchase.
+
+![screenshot](documentation/firefox/order_confirmation.png)
 
 **Artists Page**
 
 - Within the navigation system for this website, I have included a page to contain the profile information assocciated to each of the artists featured within the site. Allowing user's the ability to gain valuable information as to the artists history.
 
+![screenshot](documentation/chrome/artists.png)
+
 **Subscription To The Website's Newsletter**
 
 - Within the footer of each page there features a short message to prompt site visitor's to sign up to the website's regular newsletter. If the user enters their name and email address, they are added to table within the database of "Subscribed User's" in order for the newsletter to be mailed to them at a future date. The date and time of this occurance is also logged. Checks are carried out to ensure that the form has been filled out correctly, and that the entered email address is not already stored within the database. If either fails, the user is informed of such information using the toast's messaging system.
+
+- ![screenshot](documentation/chrome/subscribe.png)
 
 **Administration Access**
 
@@ -235,22 +245,24 @@ Once the payment field has been completed, pressing the Complete Order button fi
 
 - This feature is only accessible if you are signed-in as the site administrator. It allows for full crud functionality, allowing the addition of products to the site. It provides the admin user the ability to further edit any of the products information and/or to delete the product in question. This functionality is available to access via the products page or the products detail page.
 
-![screenshot](documentation/manage_products.png)
+![screenshot](documentation/django_admin_product.png)
 
 **Stock Availability**
 
 - When the store owner or any administrative user's add a product. It comes with an "Availability" field to allow setting the number of items available to purchase of any given product. In relation to this being a site featuring one-off, unique art pieces or artwork of a limited production run. I feel this is of upmost importance as once an item is sold, it should not be available to any other user's once the transaction has been completed.
 Therefore, I have restricted the Quantity field to only allow the user the option to purchase any items to this limit set by the administator. In addition to this, once an item has sold it sets the availability of the item to zero. Once this has occured. The item in question is displayed on the Products page with a Sold sign and no assocciated price or button to add the item to a shopping bag.
 
+![screenshot](documentation/firefox/sold.png)
+
 **Deletion Confirmation**
 
 - As a defensive approach to the possiblity that any of the deletion options on the site are selected by mistake. I have added a pop-up message component to give the admin user, a further safety feature to confirm deletion of the product in question.
 
-![screenshot](documentation/deletion_confirmation.png)
+![screenshot](documentation/safari/confirm_deletion.png)
 
 **Error Response Pages**
 
-- If any 404 or 500 errors occur. I have implemented 'user friendly' response pages, more in keeping with the styling of the website, in order to handle these outcomes in a more elegant way than they would otherwise appear to the user. 
+- If any 404 or 500 errors occur. I have implemented 'user friendly' response pages, more in keeping with the styling of the website, in order to handle these outcomes in a more elegant way than they would otherwise appear to the user.
 
 ### Future Implementations
 
