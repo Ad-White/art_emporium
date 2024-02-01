@@ -140,12 +140,12 @@ I have found and fixed this issue.
 
 ## Unfixed Bugs
 
-- Bug 1: I have throughout development and deployment struggled to see why the overlay to cover the background image I had in place for the site, just does not work. I may be pretty code blind by now. So, for the moment, in order to stop it appearing within the console as an error. I have removed it. I will continue to look and find out why.
+- Bug 1: I have throughout development and deployment struggled to see why the overlay to cover the background image I had in place for the site, just does not work. I may be pretty code blind by now. So, for the moment, in order to stop it appearing within the console as an error. I have removed it. I will continue to look and find out why. My suspicions are to further investigate the CSS styling used. For the time being the effect is cosmetic and has no effect on the funcionality of the site.
 
 - Bug 2: Failing webhook. I have a success rate of 60% in relation to the webhook I have implemented. It relates to the payment_intent_success webhook. I have researched for hours, but have had no success myself. My mentor, Rory has also tried to help. However, it doesn't appear to be an easy fix.
-Again, I will not give up on this in order to find the solution to the problem.
+Again, I will not give up on this in order to find the solution to the problem. As this webhook is used by the payment platform used, to keep track of any purchase made outside of the sites existing payment flow. Such as a loss of connection or insufficient funds regarding the payment being processed. This bug will need to be rectified before the site can be published 'live' in the real world. The consequences of this bug will mean any user's making a purchase will likely have their payment cancelled. Despite the user's own experience making it seem that their purchase was successful, with regards to having sufficient funds available.
 
-- Bug 3: Gmail not working. I have not been able to get gmail to work as I had hoped. As I have spent a lot of time with Bug 2. I still need to continue to research as to why the confirmation messages are not sending out. My suspicions are that it may have something to do with Google's strict security policy, and perhaps how it may have been updated?
+- Bug 3: Gmail not working. I have not been able to get gmail to work as I had hoped. As I have spent a lot of time with Bug 2. I still need to continue to research as to why the confirmation messages are not sending out. My suspicions are that it may have something to do with Google's strict security policy, and perhaps how it may have been updated? The effect of this bug will mean the user will at present not receive email confirmation when they successfully sign up. Or after completion of a purchase for example. At present the user will still receive communication of the sites flow of functionality, via the use of the toasts that have been implemented.
 
 
 There are no remaining bugs that I am aware of.
