@@ -147,6 +147,11 @@ This project uses a relational database structure. Using software by Lucid, I ha
 
 ![screenshot](documentation/art_emporium_database.png)
 
+The relationship between the categories created e.g. Painting, Sculpture, etc. And the corresponding products found within that grouping. Uses the Category table primary key of 'category' linked using the forgein key of 'category' within the Products table. This ensures each category only contains the neccessary products to be added or read to that category.
+When a user profile has been created, and contains their name and address, etc. For that individual user to have a relationship with the information of any order they wish to create/complete. The User Profile table uses a 'one to one field', named 'user' to link to the foreign key field named, 'user_profile', within the Order table. The use of a 'one to one field' relationship between this data, ensures that any orders created by a user remains unique to that particular user.
+The Artists and Subscribed Users tables are unrelated to the previoulsy described database relationships, or to one another. The Artists table data is to be retrieved and used in a read only context to any site visitor viewing the respective page. The Subscribed Users table acts as a data store for any site user wishing to store their name and email address, alongside with a automatically created, 'created_date' field.
+In a future update, I hope to create a further relationship between an individual User's Profile and the Subscribed User's table. In order to enable that user the freedom to unsubscribe from within their own profile.
+
 ## Features
 
 ### Existing Features
